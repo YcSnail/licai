@@ -1,0 +1,432 @@
+<script>
+
+
+    (function (e) {
+        function t(t) {
+            for (var a, u, n = t[0], o = t[1], r = t[2], v = 0, p = []; v < n.length; v++) u = n[v], i[u] && p.push(i[u][0]), i[u] = 0;
+            for (a in o) Object.prototype.hasOwnProperty.call(o, a) && (e[a] = o[a]);
+            c && c(t);
+            while (p.length) p.shift()();
+            return s.push.apply(s, r || []), l()
+        }
+
+        function l() {
+            for (var e, t = 0; t < s.length; t++) {
+                for (var l = s[t], a = !0, n = 1; n < l.length; n++) {
+                    var o = l[n];
+                    0 !== i[o] && (a = !1)
+                }
+                a && (s.splice(t--, 1), e = u(u.s = l[0]))
+            }
+            return e
+        }
+
+        var a = {}, i = {app: 0}, s = [];
+
+        function u(t) {
+            if (a[t]) return a[t].exports;
+            var l = a[t] = {i: t, l: !1, exports: {}};
+            return e[t].call(l.exports, l, l.exports, u), l.l = !0, l.exports
+        }
+
+        u.m = e, u.c = a, u.d = function (e, t, l) {
+            u.o(e, t) || Object.defineProperty(e, t, {enumerable: !0, get: l})
+        }, u.r = function (e) {
+            "undefined" !== typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {value: "Module"}), Object.defineProperty(e, "__esModule", {value: !0})
+        }, u.t = function (e, t) {
+            if (1 & t && (e = u(e)), 8 & t) return e;
+            if (4 & t && "object" === typeof e && e && e.__esModule) return e;
+            var l = Object.create(null);
+            if (u.r(l), Object.defineProperty(l, "default", {
+                enumerable: !0,
+                value: e
+            }), 2 & t && "string" != typeof e) for (var a in e) u.d(l, a, function (t) {
+                return e[t]
+            }.bind(null, a));
+            return l
+        }, u.n = function (e) {
+            var t = e && e.__esModule ? function () {
+                return e["default"]
+            } : function () {
+                return e
+            };
+            return u.d(t, "a", t), t
+        }, u.o = function (e, t) {
+            return Object.prototype.hasOwnProperty.call(e, t)
+        }, u.p = "/chuancai/";
+        var n = window["webpackJsonp"] = window["webpackJsonp"] || [], o = n.push.bind(n);
+        n.push = t, n = n.slice();
+        for (var r = 0; r < n.length; r++) t(n[r]);
+        var c = o;
+        s.push([0, "chunk-vendors"]), l()
+    })({
+        0: function (e, t, l) {
+            e.exports = l("56d7")
+        }, "3fb7": function (e, t, l) {
+            "use strict";
+            var a = l("b00b"), i = l.n(a);
+            i.a
+        }, "56d7": function (e, t, l) {
+            "use strict";
+            l.r(t);
+            l("cadf"), l("551c"), l("097d");
+            var a = l("2b0e"), i = function () {
+                var e = this, t = e.$createElement, l = e._self._c || t;
+                return l("div", {attrs: {id: "app"}}, [l("HelloWorld", {attrs: {msg: "Welcome to Your Vue.js App"}})], 1)
+            }, s = [], u = function () {
+                var e = this, t = e.$createElement, l = e._self._c || t;
+                return l("div", {staticClass: "hello"}, [l("h1", [e._v("74960理财计算器")]), l("h4", [e._v("守护全世界最辣的川菜")]), l("p", [e._v("tips:科比局不要碰，陈翔六点半不要碰")]), l("p", [e._v("祝大家吃的开心，辣的过瘾（未经允许不能做宣传用）")]), l("p", [e._v("斗鱼id: 小允允 （有建议意见请发私信）")]), l("div", {staticClass: "select-options"}, [l("div", {staticClass: "people"}, [l("h2", [e._v("人员选择")]), l("p", {staticClass: "label"}, [e._v("小白鸽/斗鸡/仙仙/CC/冷冷中有几人在带川神")]), l("Select", {
+                    staticStyle: {width: "300px"},
+                    model: {
+                        value: e.datui, callback: function (t) {
+                            e.datui = t
+                        }, expression: "datui"
+                    }
+                }, e._l(e.datuiList, function (t) {
+                    return l("Option", {key: t.value, attrs: {value: t.value}}, [e._v(e._s(t.label))])
+                })), l("p", {staticClass: "label"}, [e._v("兰酱/龙神/莉莉丝/Hao/中有几人在带川神")]), l("Select", {
+                    staticStyle: {width: "300px"},
+                    model: {
+                        value: e.xiaotui, callback: function (t) {
+                            e.xiaotui = t
+                        }, expression: "xiaotui"
+                    }
+                }, e._l(e.xiaotuiList, function (t) {
+                    return l("Option", {key: t.value, attrs: {value: t.value}}, [e._v(e._s(t.label))])
+                })), l("p", {staticClass: "label"}, [e._v("王菠萝是否在场")]), l("Select", {
+                    staticStyle: {width: "300px"},
+                    model: {
+                        value: e.boluo, callback: function (t) {
+                            e.boluo = t
+                        }, expression: "boluo"
+                    }
+                }, e._l(e.boluoList, function (t) {
+                    return l("Option", {key: t.value, attrs: {value: t.value}}, [e._v(e._s(t.label))])
+                }))], 1), l("div", {staticClass: "people"}, [l("h2", [e._v("战场选择")]), l("p", {staticClass: "label"}, [e._v("服务器")]), l("Select", {
+                    staticStyle: {width: "300px"},
+                    model: {
+                        value: e.server, callback: function (t) {
+                            e.server = t
+                        }, expression: "server"
+                    }
+                }, e._l(e.serverList, function (t) {
+                    return l("Option", {key: t.value, attrs: {value: t.value}}, [e._v(e._s(t.label))])
+                })), l("p", {staticClass: "label"}, [e._v("地图")]), l("Select", {
+                    staticStyle: {width: "300px"},
+                    model: {
+                        value: e.zc, callback: function (t) {
+                            e.zc = t
+                        }, expression: "zc"
+                    }
+                }, e._l(e.zcList, function (t) {
+                    return l("Option", {key: t.value, attrs: {value: t.value}}, [e._v(e._s(t.label))])
+                }))], 1), l("div", {staticClass: "people"}, [l("h2", [e._v("川神状态")]), l("p", {staticClass: "label"}, [e._v('川神是否说了"没有这么多嘻嘻哈哈了"')]), l("Select", {
+                    staticStyle: {width: "300px"},
+                    model: {
+                        value: e.xiha, callback: function (t) {
+                            e.xiha = t
+                        }, expression: "xiha"
+                    }
+                }, e._l(e.xihaList, function (t) {
+                    return l("Option", {key: t.value, attrs: {value: t.value}}, [e._v(e._s(t.label))])
+                })), l("p", {staticClass: "label"}, [e._v('川神是否在"低调 隐忍 杀戮"状态中')]), l("Select", {
+                    staticStyle: {width: "300px"},
+                    model: {
+                        value: e.zb, callback: function (t) {
+                            e.zb = t
+                        }, expression: "zb"
+                    }
+                }, e._l(e.zbList, function (t) {
+                    return l("Option", {key: t.value, attrs: {value: t.value}}, [e._v(e._s(t.label))])
+                })), l("p", {staticClass: "label"}, [e._v("川神拍黄瓜了吗？")]), l("Select", {
+                    staticStyle: {width: "300px"},
+                    model: {
+                        value: e.hg, callback: function (t) {
+                            e.hg = t
+                        }, expression: "hg"
+                    }
+                }, e._l(e.hgList, function (t) {
+                    return l("Option", {key: t.value, attrs: {value: t.value}}, [e._v(e._s(t.label))])
+                }))], 1)]), l("div", {staticClass: "btn-group"}, [l("Button", {
+                    attrs: {type: "warning"},
+                    on: {click: e.caculate}
+                }, [e._v("计算结果")]), e.visible ? l("div", [l("h1", [e._v("三杀 " + e._s(e.sansha))]), l("h1", [e._v("六杀 " + e._s(e.liusha))]), l("h1", [e._v("top3 " + e._s(e.top3))])]) : e._e()], 1)])
+            }, n = [], o = {
+                name: "HelloWorld", props: {msg: String}, data: function () {
+                    return {
+                        visible: !1,
+                        datuiList: [{label: "0", value: -10}, {label: "1", value: 5}, {
+                            label: "2",
+                            value: 5
+                        }, {label: "3", value: 5}],
+                        xiaotuiList: [{label: "0", value: 0}, {label: "1", value: 2}, {
+                            label: "2",
+                            value: 3
+                        }, {label: "3", value: 4}],
+                        boluoList: [{label: "是", value: -3}, {label: "否", value: 0}],
+                        xihaList: [{label: "是", value: -10}, {label: "否", value: 0}],
+                        zbList: [{label: "是", value: -10}, {label: "否", value: 0}],
+                        hgList: [{label: "是", value: -5}, {label: "否", value: 0}],
+                        serverList: [{label: "kakao", value: -10}, {label: "亚服", value: 0}],
+                        zcList: [{label: "小图", value: -10}, {label: "海岛", value: 0}, {label: "沙漠", value: -10}],
+                        zc: "",
+                        server: "",
+                        hg: "",
+                        zb: "",
+                        xiha: "",
+                        datui: "",
+                        xiaotui: "",
+                        boluo: "",
+                        sansha: "不能",
+                        liusha: "不能",
+                        top3: "不能"
+                    }
+                }, methods: {
+                    caculate: function () {
+                        var e, t, l;
+                        this.visible = !0, e = this.xiha + this.hg + this.zb, t = this.server + this.zc + this.zb + this.hg + this.xiha, l = this.datui + this.xiaotui + this.boluo + this.server + this.zc + this.zb + this.xiha + this.hg, e >= -20 && (this.sansha = "能"), t > 0 && (this.liusha = "能"), l > 10 && (this.top3 = "能"), -3 === this.boluo && (this.top3 = "不能")
+                    }
+                }
+            }, r = o, c = (l("3fb7"), l("2877")), v = Object(c["a"])(r, u, n, !1, null, "179999dc", null);
+            v.options.__file = "HelloWorld.vue";
+            var p = v.exports, b = {name: "app", components: {HelloWorld: p}}, h = b,
+                d = (l("7c55"), Object(c["a"])(h, i, s, !1, null, null, null));
+            d.options.__file = "App.vue";
+            var f = d.exports, _ = l("e069"), x = l.n(_);
+            l("dcad");
+            a["default"].use(x.a), a["default"].config.productionTip = !1, new a["default"]({
+                render: function (e) {
+                    return e(f)
+                }
+            }).$mount("#app")
+        }, "7c55": function (e, t, l) {
+            "use strict";
+            var a = l("d3dd"), i = l.n(a);
+            i.a
+        }, b00b: function (e, t, l) {
+        }, d3dd: function (e, t, l) {
+        }
+    });
+    //# sourceMappingURL=app.9c1580bd.js.map
+
+
+    (function (e) {
+        function t(t) {
+            for (var i, a, c = t[0], s = t[1], l = t[2], u = 0, f = []; u < c.length; u++) a = c[u], r[a] && f.push(r[a][0]), r[a] = 0;
+            for (i in s) Object.prototype.hasOwnProperty.call(s, i) && (e[i] = s[i]);
+            p && p(t);
+            while (f.length) f.shift()();
+            return o.push.apply(o, l || []), n()
+        }
+
+        function n() {
+            for (var e, t = 0; t < o.length; t++) {
+                for (var n = o[t], i = !0, c = 1; c < n.length; c++) {
+                    var s = n[c];
+                    0 !== r[s] && (i = !1)
+                }
+                i && (o.splice(t--, 1), e = a(a.s = n[0]))
+            }
+            return e
+        }
+
+        var i = {}, r = {app: 0}, o = [];
+
+        function a(t) {
+            if (i[t]) return i[t].exports;
+            var n = i[t] = {i: t, l: !1, exports: {}};
+            return e[t].call(n.exports, n, n.exports, a), n.l = !0, n.exports
+        }
+
+        a.m = e, a.c = i, a.d = function (e, t, n) {
+            a.o(e, t) || Object.defineProperty(e, t, {enumerable: !0, get: n})
+        }, a.r = function (e) {
+            "undefined" !== typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, {value: "Module"}), Object.defineProperty(e, "__esModule", {value: !0})
+        }, a.t = function (e, t) {
+            if (1 & t && (e = a(e)), 8 & t) return e;
+            if (4 & t && "object" === typeof e && e && e.__esModule) return e;
+            var n = Object.create(null);
+            if (a.r(n), Object.defineProperty(n, "default", {
+                enumerable: !0,
+                value: e
+            }), 2 & t && "string" != typeof e) for (var i in e) a.d(n, i, function (t) {
+                return e[t]
+            }.bind(null, i));
+            return n
+        }, a.n = function (e) {
+            var t = e && e.__esModule ? function () {
+                return e["default"]
+            } : function () {
+                return e
+            };
+            return a.d(t, "a", t), t
+        }, a.o = function (e, t) {
+            return Object.prototype.hasOwnProperty.call(e, t)
+        }, a.p = "/chuancai/";
+        var c = window["webpackJsonp"] = window["webpackJsonp"] || [], s = c.push.bind(c);
+        c.push = t, c = c.slice();
+        for (var l = 0; l < c.length; l++) t(c[l]);
+        var p = s;
+        o.push([0, "chunk-vendors"]), n()
+    })({
+        0: function (e, t, n) {
+            e.exports = n("56d7")
+        }, "09ec": function (e, t, n) {
+            e.exports = n.p + "img/hg.071c1e69.jpeg"
+        }, "1b41": function (e, t, n) {
+            e.exports = n.p + "img/laochen.5c215745.jpeg"
+        }, "28c8": function (e, t, n) {
+            e.exports = n.p + "img/gema.12590243.jpeg"
+        }, 2917: function (e, t, n) {
+            e.exports = n.p + "img/lengleng.feb91458.jpeg"
+        }, "372a": function (e, t, n) {
+            e.exports = n.p + "img/hao.60380bf0.jpeg"
+        }, 3845: function (e, t, n) {
+            e.exports = n.p + "img/lanlan.db29dbbe.jpeg"
+        }, "3c03": function (e, t, n) {
+            e.exports = n.p + "img/longshen.b0969e24.jpeg"
+        }, 4016: function (e, t, n) {
+            e.exports = n.p + "img/laochen3.4c572038.jpeg"
+        }, "41c3": function (e, t, n) {
+            e.exports = n.p + "img/laochen6.96f6d2e5.jpeg"
+        }, "4b7a": function (e, t, n) {
+            e.exports = n.p + "img/laochen2.b594eec0.jpeg"
+        }, "56d7": function (e, t, n) {
+            "use strict";
+            n.r(t);
+            n("cadf"), n("551c"), n("097d");
+            var i = n("2b0e"), r = function () {
+                var e = this, t = e.$createElement, n = e._self._c || t;
+                return n("div", {attrs: {id: "app"}}, [n("HelloWorld", {attrs: {msg: "Welcome to Your Vue.js App"}})], 1)
+            }, o = [], a = function () {
+                var e = this, t = e.$createElement, n = e._self._c || t;
+                return n("div", {staticStyle: {"background-color": "#ddd"}}, [e._m(0), n("Divider", [e._v("人员选择")]), n("div", {staticClass: "people-select"}, [n("CheckboxGroup", {
+                    staticClass: "box-wrapper",
+                    attrs: {size: "large"},
+                    model: {
+                        value: e.people, callback: function (t) {
+                            e.people = t
+                        }, expression: "people"
+                    }
+                }, e._l(e.list, function (t) {
+                    return n("Checkbox", {
+                        key: t.id,
+                        staticClass: "box",
+                        attrs: {label: t.id}
+                    }, [n("span", [e._v(e._s(t.name))]), n("img", {
+                        staticStyle: {width: "100px"},
+                        attrs: {src: t.src, alt: ""}
+                    })])
+                }))], 1), n("Divider", [e._v("Buff加成")]), n("div", {staticClass: "people-select"}, [n("CheckboxGroup", {
+                    staticClass: "box-wrapper",
+                    attrs: {size: "large"},
+                    model: {
+                        value: e.buff, callback: function (t) {
+                            e.buff = t
+                        }, expression: "buff"
+                    }
+                }, e._l(e.buffList, function (t) {
+                    return n("Checkbox", {
+                        key: t.id,
+                        staticClass: "box",
+                        attrs: {label: t.id}
+                    }, [n("span", [e._v(e._s(t.name))]), n("img", {
+                        staticStyle: {width: "100px"},
+                        attrs: {src: t.src, alt: ""}
+                    })])
+                }))], 1), n("Divider", [e._v("结果测算")]), n("Button", {
+                    attrs: {type: "warning", long: ""},
+                    on: {click: e.caculate}
+                }, [e._v("点击计算结果")]), n("div", {staticStyle: {margin: "40px"}}), n("div", {
+                    staticStyle: {
+                        "font-size": "30px",
+                        color: "red",
+                        display: "flex",
+                        "flex-direction": "column",
+                        "align-items": "center",
+                        "justify-content": "center"
+                    }
+                }, [n("p", [e._v("三杀:" + e._s(e.san))]), n("p", [e._v("六杀:" + e._s(e.liu))]), n("p", [e._v("前三:" + e._s(e.top))])])], 1)
+            }, c = [function () {
+                var e = this, t = e.$createElement, n = e._self._c || t;
+                return n("div", {staticClass: "hello"}, [n("h1", [e._v("川菜2.0")]), n("h2", [e._v("大家好，我又回来了，这次全新改版，川菜2.0正式上线")]), n("h2", [e._v("斗鱼id:小允允")])])
+            }], s = (n("ac6a"), {
+                name: "HelloWorld", props: {msg: String}, data: function () {
+                    return {
+                        list: [
+                            {name: "两米八九黄日天",id: "6",src: n("3c03")},
+                            {name: "显卡大王菠萝",id: "-5",src: n("f933")},
+                            {name: "大大大大莉莉丝", id: "5", src: n("81da")},
+                            {name: "RunAway笨比兰酱",id: "7", src: n("3845")},
+                            {name: "华府夫人鸽妈", id: "11", src: n("28c8")},
+                            {name: "不吃核桃上将豪", id: "8", src: n("372a")},
+                            {name: "人美歌甜冷圆圆", id: "9", src: n("2917")},
+                            {name: "爱你呦仙仙", id: "15", src: n("73b2")}
+                        ],
+
+                        buffList: [
+                            {id: "-6", name: "没有辣么多嘻嘻哈哈了", src: n("1b41")},
+                            {id: "-3", name: "这把我认真了",src: n("41c3")},
+                            {id: "-4", name: "低调 隐忍 杀戮 (装B)", src: n("baae")},
+                            {id: "-5",name: "拍黄瓜",src: n("09ec")},
+                            {id: "-10", name: "他们已经死了", src: n("4016")},
+                            {id: "5", name: "嘻嘻哈哈", src: n("4b7a")}
+                        ],
+                        people: [],
+                        buff: [],
+                        san: "",
+                        liu: "",
+                        top: ""
+                    }
+                }, methods: {
+                    caculate: function () {
+                        this.people.length > 3 && (alert("人员超出三个，自动去除超出人员"), alert("你TM看不起我川神？川神需要".concat(this.people.length, "个人带？")), this.people = this.people.slice(0, 3));
+                        var e = 0;
+                        this.people.forEach(function (t) {
+                            e += parseInt(t)
+                        });
+                        var t = 0;
+                        this.buff.forEach(function (e) {
+                            t += parseInt(e)
+                        });
+                        var n = e + t;
+                        n > 25 ? (this.san = "能", this.liu = "不能", this.top = "能") : n <= 25 && n > 15 ? (this.san = "能", this.liu = "不能", this.top = "不能") : n > 0 && n <= 15 ? (this.san = "能", this.liu = "可能", this.top = "有点B数行吗") : n <= 0 && (this.san = "有点B数行吗", this.liu = "有点B数行吗", this.top = "有点B数行吗")
+                    }
+                }
+            }), l = s, p = (n("bc5b"), n("2877")), u = Object(p["a"])(l, a, c, !1, null, "69c40c27", null);
+            u.options.__file = "HelloWorld.vue";
+            var f = u.exports, d = {name: "app", components: {HelloWorld: f}}, b = d,
+                h = (n("7c55"), Object(p["a"])(b, r, o, !1, null, null, null));
+            h.options.__file = "App.vue";
+            var g = h.exports, m = n("e069"), v = n.n(m);
+            n("dcad");
+            i["default"].use(v.a), i["default"].config.productionTip = !1, new i["default"]({
+                render: function (e) {
+                    return e(g)
+                }
+            }).$mount("#app")
+        }, "73b2": function (e, t, n) {
+            e.exports = n.p + "img/xianxian.59aca5c2.jpeg"
+        }, "7c55": function (e, t, n) {
+            "use strict";
+            var i = n("d3dd"), r = n.n(i);
+            r.a
+        }, "81da": function (e, t, n) {
+            e.exports = n.p + "img/lili.2877a76e.jpeg"
+        }, baae: function (e, t, n) {
+            e.exports = n.p + "img/laochen4.a6319de8.jpeg"
+        }, bc5b: function (e, t, n) {
+            "use strict";
+            var i = n("eb6b"), r = n.n(i);
+            r.a
+        }, d3dd: function (e, t, n) {
+        }, eb6b: function (e, t, n) {
+        }, f933: function (e, t, n) {
+            e.exports = n.p + "img/boluo.68f00719.jpeg"
+        }
+    });
+    //# sourceMappingURL=app.86a1d357.js.map
+
+
+
+</script>
